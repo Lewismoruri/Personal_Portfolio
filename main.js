@@ -1,9 +1,7 @@
 var typed = new Typed(".text", {
   strings: [
     "Data Analyst",
-    "Power BI Developer",
     "Business Intelligence Analyst",
-    "Data Visualization Specialist",
   ],
   typeSpeed: 100,
   backSpeed: 100,
@@ -77,7 +75,7 @@ if (contactForm) {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:edani.5420@gmail.com?subject=${encodeURIComponent(subject)}
+    const mailtoLink = `mailto:morurilewis@gmail.com?subject=${encodeURIComponent(subject)}
 &body=${encodeURIComponent(
       `Name: ${name}
 
@@ -96,7 +94,7 @@ const resumeDownload = document.getElementById("resumeDownload");
 
 if (resumeDownload) {
   resumeDownload.addEventListener("click", () => {
-    const pdfUrl = "assets/DanielCV.pdf";
+    const pdfUrl = "assets/LewisMoruriCV.pdf";
 
     const newTab = window.open("", "_blank");
 
@@ -105,7 +103,7 @@ if (resumeDownload) {
       <body>
       <a id       = "downloadLink"
          href     = "${pdfUrl}"
-         download = "Daniel_J_Resume.pdf">
+         download = "Lewis_Moruri_Resume.pdf">
       </a>
 
       <script>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+```
+<title>
+    Turning Raw Sales Data Into Actionable Business Decisions |
+    Lewis Onyando Moruri
+</title>
+
+<link rel="stylesheet" href="../stylesheet.css" />
+
+<link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+/>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<header class="header">
+
+    <a href="../index.html" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+        <a href="../index.html#home" style="--i:1">Home</a>
+        <a href="../index.html#about" style="--i:2">About</a>
+        <a href="../index.html#skills" style="--i:3">Skills</a>
+        <a href="../index.html#services" style="--i:4">Projects</a>
+        <a href="../index.html#blog" style="--i:5">Blog</a>
+        <a href="../index.html#contact" style="--i:6">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- Blog Article -->
+<main class="blog-post-page">
+
+    <article class="blog-post">
+
+        <!-- Back to Blog -->
+        <a href="../index.html#blog" class="blog-back">
+            ← Back to Blog
+        </a>
+
+
+        <!-- Article Header -->
+        <p class="blog-meta">
+            Data Analysis • 5 min read
+        </p>
+
+        <h1>
+            Turning Raw Sales Data Into Actionable Business Decisions
+        </h1>
+
+        <p class="blog-intro">
+            A dataset can contain thousands of rows of sales information,
+            but numbers alone don't tell a business what to do. In this
+            project, I used Power BI to explore e-commerce sales data and
+            uncover insights around profitability, regional performance,
+            customer segments, and year-over-year trends.
+        </p>
+
+
+        <!-- Dashboard Image
+             Add your dashboard image here when ready.
+        -->
+
+        <!--
+        <img
+            src="../images/superstore-dashboard.png"
+            alt="Superstore Analytics Dashboard"
+            class="blog-dashboard-image"
+        >
+        -->
+
+
+        <div class="blog-hero-accent"></div>
+
+
+        <!-- Introduction -->
+        <section>
+
+            <h2>The Project</h2>
+
+            <p>
+                This project was part of the Future Interns Data Analytics
+                Track. The goal was to take raw e-commerce sales data and
+                turn it into an interactive dashboard that could help
+                decision-makers understand what was driving business
+                performance.
+            </p>
+
+            <p>
+                Rather than simply presenting totals, I wanted the dashboard
+                to answer practical questions:
+            </p>
+
+            <ul>
+                <li>Which products are generating the most profit?</li>
+                <li>Which areas are performing poorly?</li>
+                <li>How is performance changing over time?</li>
+                <li>Which customer segments contribute most to sales?</li>
+                <li>Where might the business need to investigate further?</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Data Preparation -->
+        <section>
+
+            <h2>Starting With the Data</h2>
+
+            <p>
+                Before building the visuals, I focused on preparing the
+                dataset for analysis. Raw data isn't automatically ready
+                for a dashboard, so cleaning and transformation were
+                important parts of the process.
+            </p>
+
+            <p>
+                I prepared the data, structured the model, and created
+                the calculations needed to analyse sales, profit,
+                returns, and trends.
+            </p>
+
+            <p>
+                This stage reminded me of something important:
+                <strong>
+                    a visually impressive dashboard is only as reliable
+                    as the data behind it.
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- Product Profitability -->
+        <section>
+
+            <h2>Looking Beyond Sales</h2>
+
+            <p>
+                One of the most interesting findings came from looking at
+                profitability rather than sales alone.
+            </p>
+
+            <p>
+                The Technology category stood out, with <strong>Copiers</strong>
+                emerging as one of the most profitable areas in the dataset.
+            </p>
+
+            <p>
+                On the other hand, <strong>Tables</strong> within the
+                Furniture category were among the most loss-making areas.
+            </p>
+
+            <p>
+                This highlighted an important distinction:
+                <strong>high sales do not necessarily mean high profit.</strong>
+            </p>
+
+            <p>
+                Looking at both revenue and profitability gives a business
+                a much clearer understanding of which products are
+                actually contributing to its bottom line.
+            </p>
+
+        </section>
+
+
+        <!-- Regional Performance -->
+        <section>
+
+            <h2>Where Is the Business Performing Best?</h2>
+
+            <p>
+                I also analysed performance geographically to understand
+                how results differed across states.
+            </p>
+
+            <p>
+                <strong>California</strong> emerged as the strongest
+                performing state, while <strong>Texas</strong> was among
+                the weaker performers based on profit.
+            </p>
+
+            <p>
+                The geographic view made these differences easier to spot.
+                Instead of looking through rows of state-level numbers,
+                the map provided a quick visual overview of where
+                performance was strongest and where further investigation
+                might be needed.
+            </p>
+
+            <p>
+                Importantly, the dashboard doesn't explain <em>why</em>
+                California performs better than Texas. It does something
+                more useful at this stage: it tells us where to start
+                asking better questions.
+            </p>
+
+        </section>
+
+
+        <!-- YoY Analysis -->
+        <section>
+
+            <h2>Are We Actually Improving?</h2>
+
+            <p>
+                Looking at a single year's performance only tells part of
+                the story. To understand whether the business was improving,
+                I included year-over-year comparisons.
+            </p>
+
+            <p>
+                The dashboard compares:
+            </p>
+
+            <ul>
+                <li>Sales</li>
+                <li>Profit</li>
+                <li>Percentage of returned orders</li>
+            </ul>
+
+            <p>
+                The sales trend also compares the current year with the
+                previous year, making it easier to identify changes in
+                performance over time.
+            </p>
+
+            <p>
+                One detail I found particularly interesting was the
+                treatment of returned orders. A decrease in the percentage
+                of returned orders is actually a positive outcome, even
+                though the percentage change itself is negative.
+            </p>
+
+            <p>
+                That was a useful reminder that
+                <strong>
+                    numbers need context before they can become insights.
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- Customer Segments -->
+        <section>
+
+            <h2>Understanding the Customers</h2>
+
+            <p>
+                Sales were also broken down into three customer segments:
+                <strong>Consumer, Corporate, and Home Office.</strong>
+            </p>
+
+            <p>
+                Segmenting customers provides another layer of context.
+                Instead of treating every customer as part of one large
+                group, the business can compare how different customer
+                types contribute to overall sales.
+            </p>
+
+            <p>
+                This opens the door to deeper questions around customer
+                behaviour, profitability, and which segments might deserve
+                more attention.
+            </p>
+
+        </section>
+
+
+        <!-- Dashboard Design -->
+        <section>
+
+            <h2>Making the Insights Easy to See</h2>
+
+            <p>
+                Analysis is only useful if people can understand it.
+                That's where visualization and dashboard design become
+                important.
+            </p>
+
+            <p>
+                I used different visuals for different questions:
+                geographic maps for regional performance, trend lines
+                for year-over-year analysis, and segment visuals for
+                understanding customer contributions.
+            </p>
+
+            <p>
+                I also used conditional formatting to make performance
+                differences easier to identify. Profitability extremes
+                were visually highlighted so that strong and weak
+                performers could be recognised quickly.
+            </p>
+
+            <p>
+                The goal wasn't to fill the dashboard with charts.
+                It was to make the important information easier to find.
+            </p>
+
+        </section>
+
+
+        <!-- What I Learned -->
+        <section>
+
+            <h2>What I Learned From the Project</h2>
+
+            <p>
+                The biggest lesson I took from this project wasn't a
+                particular Power BI feature.
+            </p>
+
+            <p>
+                It was learning to think beyond the numbers.
+            </p>
+
+            <p>
+                A good analyst doesn't stop at:
+                <strong>"What happened?"</strong>
+            </p>
+
+            <p>
+                The next questions are:
+                <strong>"Why did it happen?"</strong>
+                and
+                <strong>"What should we investigate or do next?"</strong>
+            </p>
+
+            <p>
+                Building this dashboard gave me an opportunity to practise
+                that process—from cleaning and modelling data, to creating
+                DAX calculations, analysing trends, and communicating
+                findings visually.
+            </p>
+
+        </section>
+
+
+        <!-- Final Takeaway -->
+        <section>
+
+            <h2>From Data to Decisions</h2>
+
+            <p>
+                The journey from raw data to a useful business insight
+                can be summarised simply:
+            </p>
+
+            <p class="process">
+                Raw Data → Clean Data → Analysis → Visualization → Insight → Decision
+            </p>
+
+            <p>
+                But the real work happens in between those steps.
+                It requires curiosity, careful analysis, and the ability
+                to connect numbers to real business questions.
+            </p>
+
+            <p>
+                That's what I enjoy about working with data.
+                It's not just about finding numbers.
+            </p>
+
+            <p>
+                <strong>
+                    It's about finding the story behind them—and making
+                    that story useful.
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- Tools -->
+        <section>
+
+            <h2>Tools & Skills</h2>
+
+            <p class="blog-meta">
+                Power BI · DAX · Data Cleaning & Transformation ·
+                Data Modeling · Time-Series Analysis ·
+                Data Visualization · Business Storytelling
+            </p>
+
+        </section>
+
+
+        <!-- Newsletter Attribution -->
+        <p class="blog-original">
+            Originally published as part of my LinkedIn newsletter,
+            <strong>Still Figuring It Out.</strong>
+        </p>
+
+    </article>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="last-text">
+
+    <p>
+        Developed by Lewis Onyando Moruri © 2026
+    </p>
+
+</footer>
+```
+
+</body>
+</html>
