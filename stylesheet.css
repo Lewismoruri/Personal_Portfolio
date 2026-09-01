@@ -1579,4 +1579,25 @@ BLOG ARTICLE - MOBILE
     font-size: 14px;
     line-height: 1.7;
 }
+  /* Contact Form Status Messages */
+
+#formMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.success-message {
+    color: rgb(0, 255, 85);
+}
+
+.error-message {
+    color: #ff4d4d;
+}
+
+/* Disabled submit button */
+
+.send:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
