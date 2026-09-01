@@ -90,8 +90,11 @@ if (resumeDownload) {
       </html>
     `);
   });
+}
 
-  const contactForm = document.getElementById("contactForm");
+// Contact Form
+
+const contactForm = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
 const formMessage = document.getElementById("formMessage");
 
@@ -99,7 +102,6 @@ if (contactForm) {
   contactForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // Change button text while sending
     submitBtn.textContent = "Sending...";
     submitBtn.disabled = true;
 
@@ -126,7 +128,6 @@ if (contactForm) {
 
         submitBtn.textContent = "Message Sent ✓";
 
-        // Return button to normal after 4 seconds
         setTimeout(() => {
           submitBtn.textContent = "Submit Message";
           submitBtn.disabled = false;
