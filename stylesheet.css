@@ -601,8 +601,9 @@ box-shadow: 0 0 5px rgb(0, 255, 85),
 width: 100%;
 text-align: center;
 padding: 25px 0;
-background: rgb(7, 85, 91);
-font-weight: 300;
+background: rgba(0, 255, 85, 0.08);
+color: rgb(0, 255, 85);
+font-weight: 500;
 margin-top: 70px;
 }
 .top{
