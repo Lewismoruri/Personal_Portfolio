@@ -62,34 +62,6 @@ window.addEventListener("click", (e) => {
   }
 });
 
-  // Contact Form Mail
-
-const contactForm = document.getElementById("contactForm");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const name    = document.getElementById("name").value;
-    const email   = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-
-    const mailtoLink = `mailto:morurilewis@gmail.com?subject=${encodeURIComponent(subject)}
-&body=${encodeURIComponent(
-      `Name: ${name}
-
-Email: ${email}
-
-Message: 
-${message}`,
-    )}`;
-
-    window.location.href = mailtoLink;
-  });
-}
-
-
 const resumeDownload = document.getElementById("resumeDownload");
 
 if (resumeDownload) {
@@ -117,5 +89,69 @@ if (resumeDownload) {
       </body>
       </html>
     `);
+  });
+}
+
+// Contact Form
+
+const contactForm = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
+const formMessage = document.getElementById("formMessage");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+      const formData = new FormData(contactForm);
+
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        formMessage.textContent =
+          "✓ Message sent successfully! I'll get back to you soon.";
+
+        formMessage.className = "success-message";
+
+        contactForm.reset();
+
+        submitBtn.textContent = "Message Sent ✓";
+
+        setTimeout(() => {
+          submitBtn.textContent = "Submit Message";
+          submitBtn.disabled = false;
+          formMessage.textContent = "";
+        }, 4000);
+
+      } else {
+        formMessage.textContent =
+          "Something went wrong. Please try again.";
+
+        formMessage.className = "error-message";
+
+        submitBtn.textContent = "Submit Message";
+        submitBtn.disabled = false;
+      }
+
+    } catch (error) {
+      formMessage.textContent =
+        "Something went wrong. Please check your connection and try again.";
+
+      formMessage.className = "error-message";
+
+      submitBtn.textContent = "Submit Message";
+      submitBtn.disabled = false;
+    }
   });
 }
