@@ -32,6 +32,12 @@ body {
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
+.logo img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 .navbar a {
   display: inline-block;
   font-size: 18px;
