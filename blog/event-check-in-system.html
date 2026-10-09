@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Built a Simple Event Check-In System | Lewis Onyando Moruri</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="../index.html#home" style="--i:1">Home</a>
+            <a href="../index.html#about" style="--i:2">About</a>
+            <a href="../index.html#services" style="--i:3">Projects</a>
+            <a href="../index.html#blog" style="--i:4">Blog</a>
+            <a href="../index.html#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <main class="blog-post-page">
+        <article class="blog-post">
+            <a href="../index.html#blog" class="blog-back">&larr; Back to Blog</a>
+
+            <p class="blog-meta">Project Build &bull; Google Forms &bull; Google Sheets</p>
+            <h1>I Built a Simple Event Check-In System</h1>
+            <p class="blog-intro">
+                Sometimes a project starts with a very simple question:
+                <strong>&ldquo;Could I make this process a little easier?&rdquo;</strong>
+                That was the question behind this project. I wanted to explore whether a simple
+                digital workflow could make event registration and check-in easier.
+            </p>
+            <div class="blog-hero-accent"></div>
+
+            <section>
+                <h2>The Idea</h2>
+                <p>
+                    I&rsquo;ve been around different events where checking people in can involve
+                    searching through lists, confirming names, and manually keeping track of who
+                    has arrived. It got me thinking about whether a simple digital workflow could
+                    make the process a little easier.
+                </p>
+                <p>I didn&rsquo;t set out to build a complicated event-management system. I just wanted to experiment.</p>
+                <p>
+                    I decided to see what I could build using tools that I already had access to:
+                    <strong>Google Forms and Google Sheets</strong>. The idea was to create a workflow
+                    that could move from registration to check-in and eventually turn the collected
+                    information into something useful.
+                </p>
+                <p><strong>Registration Form &rarr; Form Responses &rarr; Guest Check-In &rarr; Attendance Data &rarr; Dashboard</strong></p>
+                <p>For the prototype, I used synthetic/test data rather than real attendee information.</p>
+            </section>
+
+            <section>
+                <h2>Starting With Registration</h2>
+                <p>
+                    I started with a simple Google Form to collect attendee information. Once someone
+                    submits the form, the responses are automatically captured in Google Sheets. This
+                    gave me a source of registration data that I could then use for the check-in process.
+                </p>
+                <p>
+                    One thing I wanted to avoid was having the person doing the check-in work directly
+                    inside the raw responses. So I created a separate <strong>Guest Check-In</strong> workspace.
+                </p>
+            </section>
+
+            <section>
+                <h2>Building the Check-In Workflow</h2>
+                <p>The check-in sheet contains the information needed to identify an attendee and record their arrival. At the moment, it tracks:</p>
+                <ul>
+                    <li>Full Name</li>
+                    <li>Email</li>
+                    <li>Check-In Status</li>
+                    <li>Check-In Time</li>
+                </ul>
+                <p>I also added a dropdown for the check-in status:</p>
+                <ul>
+                    <li><strong>Checked_In</strong></li>
+                    <li><strong>Not Checked In</strong></li>
+                </ul>
+                <p>When someone arrives, their status can be updated and their check-in time recorded.</p>
+                <p>
+                    It&rsquo;s a relatively simple setup, but building it made me think more about the
+                    person who would actually be using the system. A volunteer checking in guests
+                    doesn&rsquo;t need to see every piece of information collected during registration.
+                    They need to be able to <strong>find the person, confirm who they are, and check them in quickly.</strong>
+                </p>
+                <p>That changed how I started thinking about the project.</p>
+            </section>
+
+            <section>
+                <h2>From Check-In Data to Insights</h2>
+                <p>
+                    Once I had the check-in information, I realized there was another opportunity.
+                    The same data could be used to understand what happened during the event.
+                </p>
+                <p>So I created an attendance dashboard showing things such as:</p>
+                <ul>
+                    <li>Total registered</li>
+                    <li>Total attended</li>
+                    <li>Did not attend</li>
+                    <li>Attendance rate</li>
+                    <li>Attendance breakdown</li>
+                    <li>Arrival progression</li>
+                </ul>
+                <p>
+                    This was probably one of the parts I enjoyed most. The data was no longer just a
+                    list of names and statuses. It was beginning to tell a story about attendance.
+                </p>
+                <p>
+                    It also reminded me why I enjoy working with data. Sometimes the value isn&rsquo;t
+                    in collecting more data. It&rsquo;s in making the data you already have easier to
+                    understand and use.
+                </p>
+            </section>
+
+            <section>
+                <h2>Then I Got Stuck</h2>
+                <p>
+                    Of course, the project didn&rsquo;t go exactly as planned. One feature I wanted was
+                    a simple <strong>search function</strong>. Ideally, a volunteer should be able to
+                    type someone&rsquo;s name or email, find the attendee quickly, and update their
+                    check-in status.
+                </p>
+                <p>
+                    I tried to work out how to implement this in Google Sheets, but I couldn&rsquo;t get
+                    the search functionality working the way I wanted. And instead of pretending the
+                    project was finished, I decided to ask for help.
+                </p>
+                <p>I shared the project and asked people who have worked with Google Sheets for suggestions. That became an important part of the project for me.</p>
+            </section>
+
+            <section>
+                <h2>What This Project Taught Me</h2>
+                <p>
+                    This project wasn&rsquo;t really about creating a sophisticated technical system.
+                    It was about taking something I had observed, asking whether there was a better
+                    way, and actually trying to build it. A few things stood out to me.
+                </p>
+
+                <h3>Start with the user</h3>
+                <p>
+                    It&rsquo;s easy to think about what features a system should have. But thinking
+                    about <strong>who is actually going to use it</strong> changes the way you build.
+                    For this project, that meant keeping the check-in workspace focused and
+                    separating it from the raw registration data.
+                </p>
+
+                <h3>Simple tools can still solve real problems</h3>
+                <p>
+                    I didn&rsquo;t need a complicated application or a large technology stack to
+                    experiment with the idea. Google Forms and Google Sheets were enough to build a
+                    working prototype and explore the workflow.
+                </p>
+
+                <h3>Getting stuck is part of building</h3>
+                <p>The search functionality is still unfinished. And that&rsquo;s okay.</p>
+                <p>
+                    I&rsquo;ve realized that building something doesn&rsquo;t mean knowing everything
+                    beforehand. Sometimes you try something, get stuck, ask for help, test another
+                    approach, and keep moving.
+                </p>
+            </section>
+
+            <section>
+                <h2>What&rsquo;s Next?</h2>
+                <p>The biggest improvement I&rsquo;m currently working on is the attendee search functionality. I want the check-in process to eventually look something like:</p>
+                <p><strong>Search &rarr; Find attendee &rarr; Confirm &rarr; Check in</strong></p>
+                <p>
+                    I&rsquo;m also interested in improving the volunteer-facing interface and making
+                    the workflow faster and easier to use during a busy event. For now, though, I&rsquo;m
+                    happy with what this small experiment has taught me.
+                </p>
+            </section>
+
+            <section>
+                <h2>Final Thoughts</h2>
+                <p>This started with a simple question:</p>
+                <p><strong>&ldquo;Could I make event check-in a little easier?&rdquo;</strong></p>
+                <p>
+                    I don&rsquo;t have a finished answer yet. But I now have a working prototype, a
+                    better understanding of the problem, and a list of things I want to improve.
+                </p>
+                <p>And maybe that&rsquo;s one of the things I enjoy most about building projects like this.</p>
+                <p>You don&rsquo;t always have to start with a perfect idea or know exactly where you&rsquo;re going.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

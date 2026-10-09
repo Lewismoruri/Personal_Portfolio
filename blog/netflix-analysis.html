@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Analysed Netflix's Movies and TV Shows | Lewis Onyando Moruri</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="../index.html#home" style="--i:1">Home</a>
+            <a href="../index.html#about" style="--i:2">About</a>
+            <a href="../index.html#services" style="--i:3">Projects</a>
+            <a href="../index.html#blog" style="--i:4">Blog</a>
+            <a href="../index.html#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <main class="blog-post-page">
+        <article class="blog-post">
+            <a href="../index.html#blog" class="blog-back">&larr; Back to Blog</a>
+
+            <p class="blog-meta">Data Analysis &bull; Netflix &bull; Excel</p>
+            <h1>I Analysed Netflix's Movies and TV Shows</h1>
+            <p class="blog-intro">
+                When I think about Netflix, I don't immediately think about spreadsheets,
+                PivotTables or charts. I think about the endless list of movies and TV shows
+                that appears whenever I open the platform and the familiar question of what
+                to watch next.
+            </p>
+            <div class="blog-hero-accent"></div>
+
+            <section>
+                <h2>Looking Behind the Library</h2>
+                <p>Behind that seemingly endless library is a lot of data.</p>
+                <p>
+                    For this project, I wanted to look beyond the Netflix interface and explore
+                    that data myself. I wanted to understand how the library changed over time,
+                    whether Netflix was more heavily focused on movies or TV shows, which
+                    countries contributed the most titles, and what the ratings of those titles
+                    looked like.
+                </p>
+                <p>
+                    I used the Netflix Titles dataset from Kaggle and built an interactive
+                    dashboard in Excel to tell that story.
+                </p>
+            </section>
+
+            <section>
+                <h2>Starting With the Data</h2>
+                <p>
+                    The dataset contains information about Netflix movies and TV shows,
+                    including their titles, release years, countries, ratings, and whether
+                    they are classified as a Movie or TV Show.
+                </p>
+                <p>
+                    Before building any charts, however, I had to deal with the data itself.
+                    As with most real-world datasets, it wasn't simply a case of opening the
+                    file and immediately creating a dashboard. I cleaned and prepared the data
+                    so that it could be used consistently for the different parts of my analysis.
+                </p>
+                <p>
+                    This also meant being careful about how I interpreted the numbers. Some
+                    records were excluded during the cleaning process depending on the analysis
+                    being performed, so the totals shown in different parts of the dashboard do
+                    not necessarily add up directly. Rather than forcing the numbers to
+                    reconcile, I treated each analysis according to the cleaned data relevant
+                    to it.
+                </p>
+                <p>
+                    That process was an important part of the project for me. It reminded me
+                    that the quality of a dashboard depends heavily on what happens before the
+                    first chart is created.
+                </p>
+            </section>
+
+            <section>
+                <h2>So, What Happened to Netflix's Library?</h2>
+                <p>
+                    The first thing I wanted to understand was how the number of movies and TV
+                    shows released changed over time. And this is where the story became
+                    interesting.
+                </p>
+                <p>
+                    The number of releases increased considerably throughout the 2010s. The
+                    growth becomes particularly noticeable toward the latter part of the decade,
+                    with Netflix reaching its highest levels of releases around 2018 and 2019.
+                </p>
+                <p>
+                    At first glance, the trend might simply look like Netflix was producing more
+                    and more content every year. But then the line changes direction. Around
+                    2020, the number of releases begins to fall, and the decline continues into
+                    2021.
+                </p>
+                <p>
+                    This period is important because it coincides with the COVID-19 pandemic.
+                    Film and television production around the world was heavily disrupted as
+                    productions were paused, filming schedules were delayed and releases were
+                    pushed back.
+                </p>
+                <p>
+                    So the decline in Netflix releases during this period shouldn't simply be
+                    interpreted as Netflix losing momentum. The wider entertainment industry
+                    was dealing with an extraordinary disruption to its normal production and
+                    release cycles. Looking at the data in that context makes the trend much
+                    more meaningful.
+                </p>
+            </section>
+
+            <section>
+                <h2>Movies Still Dominate</h2>
+                <p>
+                    Another question I wanted to answer was whether Netflix's library was
+                    primarily made up of movies or TV shows. The answer was fairly clear.
+                </p>
+                <p>
+                    Movies account for roughly <strong>71%</strong> of the analyzed titles,
+                    while TV shows make up about <strong>29%</strong>. That doesn't necessarily
+                    mean that movies are more important to Netflix than TV shows. It simply
+                    tells us that, within the dataset I analyzed, movies make up the larger
+                    share of the library.
+                </p>
+                <p>
+                    It was one of those findings that seems simple once you see it, but becomes
+                    much easier to understand when represented visually.
+                </p>
+            </section>
+
+            <section>
+                <h2>Netflix Is Global, but the United States Stands Out</h2>
+                <p>
+                    The next part of the analysis looked at countries associated with the
+                    titles in the dataset. The United States stands out significantly,
+                    contributing more titles than any other country in the analysis. India,
+                    the United Kingdom, Japan and several other countries also feature prominently.
+                </p>
+                <p>
+                    This was one of the aspects of the dataset that I found most interesting
+                    because it shows how Netflix's library reflects a combination of global
+                    production and distribution.
+                </p>
+                <p>
+                    Netflix may be a global platform, but the composition of its library is
+                    not evenly distributed across countries. There are clear differences in
+                    how strongly individual countries are represented.
+                </p>
+            </section>
+
+            <section>
+                <h2>What About Ratings?</h2>
+                <p>
+                    I also looked at the ratings assigned to the movies and TV shows. The
+                    distribution shows a strong presence of mature-rated titles, particularly
+                    categories such as TV-MA, TV-14 and R.
+                </p>
+                <p>
+                    This provides another perspective on the library. Looking only at the
+                    number of movies and TV shows tells us about quantity, but looking at
+                    ratings gives us an idea of the types of audiences represented within
+                    that library.
+                </p>
+            </section>
+
+            <section>
+                <h2>Turning the Analysis Into a Dashboard</h2>
+                <p>
+                    Once I had explored the data, the next challenge was figuring out how to
+                    communicate all of this without overwhelming the person looking at it.
+                    I built the final dashboard in Excel using PivotTables, PivotCharts and a
+                    year slicer covering 2010 to 2021.
+                </p>
+                <p>
+                    I wanted the dashboard to do more than display charts. I wanted someone to
+                    be able to look at it and understand the story fairly quickly: Netflix's
+                    library expanded significantly through the late 2010s, movies make up the
+                    majority of the analyzed titles, the United States is a major contributor
+                    to the library, and the sharp decline in releases around 2020–2021 occurred
+                    during a period when COVID-19 disrupted the global film and television industry.
+                </p>
+                <p>
+                    The year slicer also allows the viewer to explore how the different numbers
+                    and charts change across the period rather than looking at the data as one
+                    static snapshot.
+                </p>
+            </section>
+
+            <section>
+                <h2>What This Project Taught Me</h2>
+                <p>The biggest lesson for me wasn't actually about Netflix. It was about the process of working with data.</p>
+                <p>
+                    There is a tendency to think that data analysis begins when you create a
+                    chart. In reality, there is a lot that happens before that point:
+                    understanding the dataset, cleaning it, deciding which records can be used,
+                    asking the right questions, and figuring out which visualizations actually
+                    help answer those questions.
+                </p>
+                <p>
+                    I also learned that a dashboard doesn't need to show everything you've
+                    discovered. The underlying dataset contains far more information than what
+                    ended up on the final dashboard. The challenge was deciding what mattered
+                    to the story and what would only create noise.
+                </p>
+                <p>
+                    For me, that's what made this project worthwhile. I started with a dataset
+                    of Netflix titles, but ended up with a much better understanding of how to
+                    turn raw data into something that another person can actually explore and
+                    understand.
+                </p>
+            </section>
+
+            <section>
+                <h2>Project Details</h2>
+                <ul>
+                    <li><strong>Dataset:</strong> Netflix Titles Dataset, Kaggle</li>
+                    <li><strong>Tool:</strong> Microsoft Excel</li>
+                    <li><strong>Techniques:</strong> Data cleaning, PivotTables, PivotCharts, interactive slicers and dashboard design</li>
+                    <li><strong>Period analyzed:</strong> 2010–2021</li>
+                    <li><strong>Dashboard:</strong> Netflix Movies &amp; TV Shows Analysis</li>
+                </ul>
+                <p>
+                    <a href="../index.html#netflix-project" class="blog-link">
+                        View Netflix Project <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                    <a href="https://github.com/Lewismoruri/Netflix_Analysis"
+                       class="blog-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project on GitHub <i class="bx bx-link-external"></i>
+                    </a>
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="last-text">
+        <p>Developed by Lewis Onyando Moruri &copy; 2026</p>
+    </footer>
+</body>
+</html>

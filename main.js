@@ -1,13 +1,45 @@
 var typed = new Typed(".text", {
   strings: [
     "Data Analyst",
-    "Business Intelligence Analyst",
   ],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
+
+if (menuToggle && primaryNavigation) {
+  const closeMenu = () => {
+    primaryNavigation.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+    menuToggle.innerHTML = "<i class='bx bx-menu' aria-hidden='true'></i>";
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = primaryNavigation.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    menuToggle.innerHTML = isOpen
+      ? "<i class='bx bx-x' aria-hidden='true'></i>"
+      : "<i class='bx bx-menu' aria-hidden='true'></i>";
+  });
+
+  primaryNavigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && primaryNavigation.classList.contains("is-open")) {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+}
+
   // Skills Filter
 const filterBtns = document.querySelectorAll(".filter-btn");
 const skillCards = document.querySelectorAll(".skill-card");
@@ -39,59 +71,6 @@ document.querySelectorAll(".project-card").forEach((card) => {
     }
   });
 });
-  // Resume Popup
-const resumeBtn   = document.getElementById("resumeBtn");
-const resumeModal = document.getElementById("resumeModal");
-const resumeClose = document.querySelector(".resume-close");
-
-resumeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  resumeModal.style.display    = "block";
-  document.body.style.overflow = "hidden";  // disable background scroll
-});
-
-resumeClose.addEventListener("click", () => {
-  resumeModal.style.display    = "none";
-  document.body.style.overflow = "auto";  // re-enable background scroll
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === resumeModal) {
-    resumeModal.style.display    = "none";
-    document.body.style.overflow = "auto";  // re-enable background scroll
-  }
-});
-
-const resumeDownload = document.getElementById("resumeDownload");
-
-if (resumeDownload) {
-  resumeDownload.addEventListener("click", () => {
-    const pdfUrl = "assets/LewisMoruriCV.pdf";
-
-    const newTab = window.open("", "_blank");
-
-    newTab.document.write(`
-      <html>
-      <body>
-      <a id       = "downloadLink"
-         href     = "${pdfUrl}"
-         download = "Lewis_Moruri_Resume.pdf">
-      </a>
-
-      <script>
-        document.getElementById('downloadLink').click();
-
-        setTimeout(() => {
-          window.close();
-        }, 1500);
-      <\/script>
-
-      </body>
-      </html>
-    `);
-  });
-}
-
 // Contact Form
 
 const contactForm = document.getElementById("contactForm");

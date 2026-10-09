@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lewis Onyando | Data Analyst Portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    <link rel="icon" type="image/png" href="images/lom-logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link href ='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header has-mobile-menu">
         <a href="#home" class="logo">Portfolio</a>
-        <nav class="navbar">
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i class='bx bx-menu' aria-hidden="true"></i>
+        </button>
+        <nav class="navbar" id="primary-navigation">
             <a href="#home" style="--i:1"class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="#skills" style="--i:3">Skills</a>
-            <a href="#services" style="--i:4">Projects</a>
+            <a href="#services" style="--i:3">Projects</a>
+            <a href="#certifications" style="--i:4">Certifications</a>
             <a href="#blog" style="--i:5">Blog</a>
             <a href="#contact" style="--i:6">Contact</a>
-           <a href="#" style="--i:7" id="resumeBtn">Resume</a>
         </nav>
     </header>
     <section class="home" id="home">
@@ -28,10 +30,7 @@
             <h3>Hello, It's Me</h3>
             <h1>Lewis Onyando</h1>
             <h3>And I'm a <span class="text"> </span></h3>
-            <p>I'm a Data Analyst passionate about  and Business Intelligence.
-                  <br><br>
-                  Skilled in Python, SQL, Power BI, Excel, and Data Visualization, with hands-on experience in transforming data into actionable insights for informed decision-making.
-            </p>
+            <p>I enjoy <strong>turning confusion into clarity through data</strong>.</p>
                 <div class="home-sci">
                     <a href="mailto:morurilewis@gmail.com" target="_blank" style="--i:7" title="Gmail" aria-label="Gmail"><i class='bx bxl-gmail'></i></a>
                     <a href="https://www.linkedin.com/in/lewismoruri/" target="_blank" style="--i:8" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
@@ -52,137 +51,108 @@
 
     <div class="about-img">
         <div class="about-profile-frame">
-            <img src="images/Lewis.jpg" alt="Lewis Onyando Photo" loading="lazy">
+            <img src="images/Confused.jpg" alt="Confused character illustration with question marks" loading="lazy">
         </div>
     </div>
 
     <div class="about-text">
-        <h2>About <span>Me</span></h2>
-
-      <p>
-       I like turning messy data into decisions people can actually act on. That's the short version of what I do.
-
-I'm a data analyst with a background in Computer Information Systems, working mainly in SQL, Python, and Power BI. Give me a raw, messy dataset and I'll clean it, dig into it, and build something out of it; usually a dashboard or a report  that tells a clear story instead of just showing numbers.
-
-Right now I'm expanding into cloud, with a focus on Azure and GCP, because I want to understand not just the data itself but the systems and infrastructure that carry it.
-      </p>
+        <h2>2025: <span>My Data Journey</span></h2>
+            <p>
+                After graduation, I struggled to find a job. I knew I wanted to work in
+                <strong>data</strong>, but everywhere I looked, I kept hearing about Python, SQL,
+                Power BI, Tableau, and so many other skills.
+            </p>
+            <p>
+                I tried to learn <strong>everything at once</strong> because I needed a job.
+            </p>
+            <p>
+                For a while, I focused more on learning tools than actually
+                <strong>building projects</strong>.
+            </p>
     </div>
 
+</section>
+
+<section class="journey-next" aria-label="Where my data journey is going">
+    <div class="journey-next-text">
+        <p>
+            Now, I'm learning and <strong>building in public</strong>, starting with
+            <strong>Excel &rarr; SQL &rarr; Python</strong>.
+        </p>
+        <p>
+            My goal is simple: <strong>build real projects, become a strong Data Analyst,
+            and grow from there.</strong>
+        </p>
+    </div>
+    <div class="journey-next-image">
+        <img src="images/Lewiss.jpg" alt="Lewis working at an event" loading="lazy">
+    </div>
 </section>
   
-    <h1 class="sub-title" id="skills">My <span>Skills</span></h1>
-
-<section class="skills-section">
-
-<div class="container1">
-
-    <h1 class="heading1">Technical Skills</h1>
-
-    <!-- Filter Buttons -->
-    <div class="skills-filter">
-        <button class="filter-btn active" data-filter="all">All Skills</button>
-        <button class="filter-btn" data-filter="programming">Programming</button>
-        <button class="filter-btn" data-filter="visualization">Visualization</button>
-        <button class="filter-btn" data-filter="bi">BI Tools</button>
-        <button class="filter-btn" data-filter="database">Database</button>
-    </div>
-
-    <!-- Skill Cards -->
-    <div class="skills-grid">
-
-        <div class="skill-card programming">
-            <i class='bx bxl-python' style="color:#3776AB"></i>
-            <h3>Python</h3>
-        </div>
-
-        <div class="skill-card database">
-            <i class='bx bxs-data' style="color:#F29111"></i>
-            <h3>SQL</h3>
-        </div>
-
-        <div class="skill-card bi">
-            <i class='bx bx-bar-chart-alt-2' style="color:#F2C811"></i>
-            <h3>Power BI</h3>
-        </div>
-
-        <div class="skill-card bi">
-            <i class='bx bx-spreadsheet' style="color:#217346"></i>
-            <h3>Excel</h3>
-        </div>
-
-        <div class="skill-card programming">
-            <i class='bx bx-code-alt' style="color:#150458"></i>
-            <h3>Pandas</h3>
-        </div>
-
-        <div class="skill-card programming">
-            <i class='bx bx-math' style="color:#4DABCF"></i>
-            <h3>NumPy</h3>
-        </div>
-
-        <div class="skill-card visualization">
-            <i class='bx bx-scatter-chart' style="color:#11557C"></i>
-            <h3>Matplotlib</h3>
-        </div>
-    </div>
-
-</div>
-
-<div class="container1">
-
-    <h1 class="heading1">Professional Skills</h1>
-
-    <div class="radial-bars">
-
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">90%</div>
-            <div class="text">Analytical Thinking</div>
-        </div>
-
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">88%</div>
-            <div class="text">Data Interpretation</div>
-        </div>
-
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">88%</div>
-            <div class="text">Problem Solving</div>
-        </div>
-
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">80%</div>
-            <div class="text">Communication</div>
-        </div>
-
-    </div>
-
-</div>
-</section>
+   
 
        <section id="services">
   <div class="container">
     <h1 class="sub-title">Featured <span>Projects</span></h1>
     <div class="projects-grid">
 
-    <!-- Project 1 -->
-     <div class="project-card" data-url="https://github.com/Lewismoruri/FUTURE_DS_01">
-        <i class='bx bx-line-chart'></i>
+    <!-- Event Check-In System Project -->
+    <div class="project-card" data-url="https://github.com/Lewismoruri/Event-check-in-system">
+        <img
+            class="project-image"
+            src="images/registration.jpg"
+            alt="Event registration form preview">
+        <h3>Event Check-In System</h3>
+        <p>
+            A Google Forms and Sheets prototype for attendee registration,
+            check-in, and attendance tracking.
+        </p>
+        <p>
+            Core workflow working; attendee search is in development.
+            Personal prototype, not an official event-management system;
+            uses synthetic/test data only.
+        </p>
+
+        <div class="tech-tags">
+            <span>Google Forms &amp; Google Sheets</span>
+        </div>
+    </div>
+
+    <!-- Netflix Data Analysis Project -->
+    <div class="project-card" id="netflix-project">
+        <img
+            class="project-image"
+            src="images/netflix.jpg"
+            alt="Netflix data analysis project preview">
+        <div class="project-content">
+            <h3>Netflix Data Analysis</h3>
+
+            <p>
+                An interactive Excel dashboard exploring Netflix's library,
+                release trends, title types, contributing countries, and ratings.
+            </p>
+
+            <div class="tech-tags">
+                <span class="tag-excel">Microsoft Excel</span>
+            </div>
+
+            <a href="blog/netflix-analysis.html">
+                Read Project Story <i class='bx bx-right-arrow-alt'></i>
+            </a>
+            <a href="https://github.com/Lewismoruri/Netflix_Analysis"
+               target="_blank"
+               rel="noopener noreferrer">
+                View on GitHub <i class='bx bx-link-external'></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-url="https://github.com/Lewismoruri/FUTURE_DS_01">
+        <img
+            class="project-image"
+            src="images/sales.jpg"
+            alt="Sales growth chart over dollar bills">
         <h3>Superstore Analytics Dashboard</h3>
         <p>
             Analytics dashboard for sales performance, profitability,
@@ -191,12 +161,106 @@ Right now I'm expanding into cloud, with a focus on Azure and GCP, because I wan
 
         <div class="tech-tags">
             <span class="tag-powerbi">Power BI</span>
-            <span class="tag-excel">Excel</span>
         </div>
     </div>
 
-    <p class="projects-soon">More projects will be shared soon.</p>
-    
+</section>
+
+<h1 class="sub-title" id="certifications">My <span>Certifications</span></h1>
+
+<section class="skills-section">
+
+    <div class="container1 certifications-container">
+
+        <div class="skills-grid certifications-grid">
+
+            <!-- Certification 1 -->
+            <div class="skill-card certification-card">
+                <div class="certification-logo">
+                    <img src="images/alx.jpg" alt="ALX logo">
+                </div>
+
+                <h3>Data Analytics - ALX Africa</h3>
+
+                <p class="skills-label"><strong>Skills Acquired:</strong></p>
+                <div class="certification-skills">
+                    <span>Excel</span>
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                </div>
+
+                <a href="https://drive.google.com/file/d/1y70saIcWwXjWaiJvDITVJ6tOHK_zAwQW/view?usp=sharing"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="skill-card certification-card">
+                <div class="certification-logo">
+                    <img src="images/Datacamp.png" alt="DataCamp logo">
+                </div>
+
+                <h3>Associate Data Engineer- DataCamp</h3>
+
+                <p class="skills-label"><strong>Skills Acquired:</strong></p>
+                <div class="certification-skills">
+                    <span>SQL Queries</span>
+                    <span>Data Filtering</span>
+                    <span>Joins</span>
+                    <span>Aggregations</span>
+                </div>
+
+                <a href="YOUR_DATACAMP_CERTIFICATE_LINK"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="skill-card certification-card">
+                <div class="certification-logo">
+                    <img src="images/Datacamp.png" alt="DataCamp logo">
+                </div>
+
+                <h3>Associate Data Analyst - DataCamp</h3>
+
+                <p class="skills-label"><strong>Skills Acquired:</strong></p>
+                <div class="certification-skills">
+                    <span>SQL</span>
+                    <span>Python</span>
+                </div>
+            </div>
+
+            <!-- Certification 4 -->
+            <div class="skill-card certification-card">
+                <div class="certification-logo">
+                    <img src="images/Google skills.jpg" alt="Google logo">
+                </div>
+
+                <h3>Cloud Data Analytics - Google Cloud</h3>
+
+                <p class="skills-label"><strong>Skills Acquired:</strong></p>
+                <div class="certification-skills">
+                    <span>Cloud Data Analytics</span>
+                    <span>Data Concepts</span>
+                    <span>Data Workflows</span>
+                </div>
+
+                <a href="YOUR_CLOUD_CERTIFICATE_LINK"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <section class="blog-section" id="blog">
@@ -206,32 +270,79 @@ Right now I'm expanding into cloud, with a focus on Azure and GCP, because I wan
     <div class="blog-grid">
 
         <article class="blog-card">
-            <span class="blog-label">Data Analysis</span>
-            <h3>Turning Raw Sales Data Into Actionable Business Decisions</h3>
-            <p>
-                A practical look at how I approach messy sales data, uncover meaningful trends,
-                and turn analysis into insights that can support better business decisions.
-            </p><a href="blog/sales-data.html" class="blog-link">Read Article</a>
+            <div class="blog-content">
+                <span class="blog-category">Career &amp; Personal Growth</span>
+
+                <h3>I Found 5 Ways Data Analysts Can Make Money Outside a 9&ndash;5 Here&rsquo;s What I Learned</h3>
+
+                <p>
+                    Reflections on five data analytics side hustles, from sharing what
+                    you learn to solving real problems for businesses.
+                </p>
+
+                <a href="blog/data-analytics-side-hustles.html" class="blog-link">
+                    Read Article <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
         </article>
 
         <article class="blog-card">
-            <span class="blog-label">Power BI</span>
-            <h3>Designing Dashboards That Tell a Clear Story</h3>
-            <p>
-                A look at how thoughtful KPI selection, visual design, and storytelling can
-                turn a collection of charts into a dashboard people can actually use.
-            </p>
-            <a href="blog/power-bi-dashboards.html" class="blog-link">Read Article</a>
+            <div class="blog-content">
+                <span class="blog-category">Project Build</span>
+
+                <h3>I Built a Simple Event Check-In System</h3>
+
+                <p>
+                    How I built a registration, check-in, and attendance dashboard prototype,
+                    what I learned, and why attendee search is still a work in progress.
+                </p>
+
+                <a href="blog/event-check-in-system.html" class="blog-link">
+                    Read Article <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
         </article>
 
         <article class="blog-card">
-            <span class="blog-label">Python</span>
-            <h3>Automating Data Cleaning with Python for Faster Insights</h3>
-            <p>
-                Exploring how Python can make repetitive data-cleaning tasks more efficient,
-                consistent, and easier to reproduce.
-            </p>
-            <a href="blog/python-data-cleaning.html" class="blog-link">Read Article</a>
+            <div class="blog-content">
+                <span class="blog-category">Data Analysis</span>
+
+                <h3>I Analysed Netflix's Movies and TV Shows</h3>
+
+                <p>
+                    An interactive Excel dashboard explores how Netflix's library
+                    changed over time, from release trends to title types, countries,
+                    and ratings.
+                </p>
+
+                <a href="blog/netflix-analysis.html" class="blog-link">
+                    Read Article<i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- Blog Post: Sometimes, You Just Need to Show Up -->
+        <article class="blog-card">
+            <div class="blog-content">
+                <span class="blog-category">Career & Personal Growth</span>
+
+                <h3>Sometimes, You Just Need to Show Up</h3>
+
+                <p class="blog-date">September 23, 2026</p>
+
+                <p>
+                    A reflection on networking, learning from others,
+                    attending industry events, and embracing the journey
+                    of building a career in data.
+                </p>
+
+                <a href="https://www.linkedin.com/pulse/sometimes-you-just-need-show-up-lewis-moruri-aqa3f/?trackingId=rlS5%2FnrHRGamzUqrI3APFg%3D%3D"
+                   class="blog-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Read Article <i class='bx bx-link-external'></i>
+                </a>
+            </div>
         </article>
 
         <article class="blog-card">
@@ -240,7 +351,12 @@ Right now I'm expanding into cloud, with a focus on Azure and GCP, because I wan
             <p>
                 Lessons from learning, showing up, and becoming more comfortable in tech spaces.
             </p>
-            <a href="blog/confidence-practice.html" class="blog-link">Read Article</a>
+            <a href="https://www.linkedin.com/pulse/i-didnt-find-confidence-practiced-my-way-welcome-still-lewis-moruri-nuqof/?trackingId=7D4w9Ex7QRq3in7%2BXZDyLg%3D%3D"
+               class="blog-link"
+               target="_blank"
+               rel="noopener noreferrer">
+                Read Article <i class='bx bx-link-external'></i>
+            </a>
         </article>
 
     </div>
@@ -249,206 +365,37 @@ Right now I'm expanding into cloud, with a focus on Azure and GCP, because I wan
 </section>
 
 
-  <h1 class="contac" id="contact">Contact <span>Me</span></h1>
-<section class="contact">
-    <div class="contact-text">
-    
-        <h4>Let's Work Together</h4>
-
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h1>Contact Me</h1>
+        <h2>Let's Connect</h2>
         <p>
-          Thank you for exploring my portfolio. 
-          I look forward to connecting with you.
-       </p>
-            <div class="contact-list">
-                <li><i class='bx bxl-gmail'></i> morurilewis@gmail.com</li>
-                <li><i class='bx bxs-phone'></i> +254 742053309</li>
-            </div>
-            <div class="contact-icons">
+            Have an opportunity, a question, or an idea to discuss?
+            I'd love to hear from you.
+        </p>
 
-            <a href="mailto:morurilewis@gmail.com" target="_blank">
-              <i class='bx bxl-gmail'></i>
-            </a>
+        <h3>Book a Call</h3>
+        <p>
+            Choose a convenient time to connect with me.
+        </p>
 
-            <a href="https://www.linkedin.com/in/lewismoruri/"
-              target="_blank">
-            <i class='bx bxl-linkedin'></i>
-            </a>
+        <!-- Calendly inline embed -->
+        <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/lewisonyando">
+        </div>
 
-            <a href="https://github.com/lewismoruri"
-             target="_blank">
-            <i class='bx bxl-github'></i>
-            </a>
-
-            </div>
-
-    </div>  
-    
-      <div class="contact-form">
-  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-
-    <!-- Replace this with your Web3Forms access key -->
-    <input type="hidden" name="access_key" value="0fbfc8d7-3248-48d4-813f-ef0567c5c5f8">
-
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Enter Your Name"
-      required>
-
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter Your Email"
-      required>
-
-    <input
-      type="text"
-      id="subject"
-      name="subject"
-      placeholder="Enter Your Subject"
-      required>
-
-    <textarea
-      id="message"
-      name="message"
-      cols="40"
-      rows="10"
-      placeholder="Enter Your Message"
-      required></textarea>
-
-    <button type="submit" class="send" id="submitBtn">
-    Submit Message
-</button>
-
-<p id="formMessage"></p>
-
-  </form>
-</div>
+        <script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            type="text/javascript"
+            async>
+        </script>
     </div>
-</section>     
+</section>
 <div class="last-text">
-    <p>Developed by Lewis Onyando Moruri © 2026</p>
+    <p>All Rights Reserved © 2026</p>
 </div>
 <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>  
-<!-- Resume Popup -->
-<div id="resumeModal" class="resume-modal">
-  <div class="resume-box">
-
-    <!-- Popup Navbar -->
-    <div class="resume-header">
-      <h2>Resume - Lewis Onyando Moruri</h2>
-      <span class="resume-close">&times;</span>
-    </div>
-
-    <!-- Resume Content -->
-    <div class="resume-content">
-      <h2 class="resume-name">LEWIS ONYANDO MORURI</h2>
-      <h4 class="resume-title">Data Analyst</h4>
-
-    <p class="resume-contact">
-      📞 +254 742053309 &nbsp; | &nbsp;
-      📍 Nairobi, Kenya &nbsp; | &nbsp;
-      ✉ <a href="mailto:morurilewis@gmail.com">morurilewis@gmail.com</a>
-      &nbsp; | &nbsp;
-      <a href="https://www.linkedin.com/in/lewismoruri" target="_blank">LinkedIn</a>
-      &nbsp; | &nbsp;
-      <a href="https://github.com/lewismoruri" target="_blank">GitHub</a>
-      &nbsp; | &nbsp;
-      <a href="https://lewismoruri.github.io/Data-Analyst-Portfolio/" target="_blank">Portfolio</a>
-    </p>
-<div class="download-container">
-  <button class="download-btn" id="resumeDownload">
-    <i class='bx bx-download'></i>
-    Download Resume
-  </button>
-</div>
-      <!-- Executive Summary -->
-      <h3 class="section-title">Executive Summary</h3>
-
-      <p>
-I'm a Computer Information Systems  graduate with a solid foundation in data analysis, database management, and analytical problem-solving. Skilled in Python, SQL, Power BI, Excel, Pandas, and NumPy, I enjoy analyzing complex datasets and transforming raw data into meaningful insights. I have hands-on experience in data cleaning, exploratory data analysis (EDA), data visualization, dashboard development, and business reporting. I create interactive dashboards and visualizations that support data-driven decision-making while leveraging strong analytical thinking, attention to detail, and a commitment to continuous learning.
-     </p>
-
-      <!-- Education -->
-      <h3 class="section-title">Education</h3>
-
-<div class="edu-card">
-<b>Bachelor of Science in Computer Information Systems </b><br>
-Kenya Methodist University<br>
-(2021–2024)
-</div>
-
-      <!-- Skills -->
-      <h3 class = "section-title">Skills</h3>
-
-<ul>
-<li><b>Programming & Libraries:</b> Python, Pandas, NumPy, Matplotlib </li>
-<li><b>Database & Querying:</b> SQL (MySQL)</li>
-<li><b>Data Visualization & BI Tools:</b> Power BI</li>
-<li><b>Spreadsheet & Reporting:</b> Microsoft Excel</li>
-<li><b>Tools:</b> VS Code, Git, Jupyter Notebook</li>
-</ul>
-
-      <!-- Projects -->
-      <h3 class="section-title">Projects</h3>
-
-<ul>
-
-<li>
-<b>Superstore Analytics Dashboard | May 2026</b> – Developed an end-to-end analytics dashboard 
-using Excel, Power BI to analyze sales performance, profitability, customer segments, return rates, and regional trends. Designed KPI-driven reports and 
-5+ interactive visualizations to support data-driven decision-making and business analysis.
-</li>
-
-</ul>
-
-<!-- Internship Experience -->
-<h3 class="section-title">Internship Experience</h3>
-
-<p class="internship-title">
-  Data Analyst Intern | Analyst Labs Africa, remote | Jul 2026
-</p>
-
-<ul>
-  <li>
-    Assisted in data collection, cleaning, and analysis for various  projects,
-    developed dashboards and reports using Power BI, and contributed to data-driven
-    decision-making processes, enhancing analytical and problem-solving skills.
-  </li>
-</ul>
-
-      <!-- Certifications -->
-      <h3 class="section-title">Certifications</h3>
-
-<ul>
-<li><b>Data Analytics </b> — ALX Africa | Dec 2025</li>
-<li><b>Data Analytics Job Simulation</b> — Deloitte Forage | Jun 2026</li>
-<li><b>Associate Data Analyst</b> — DataCamp | Aug 2026</li>
-</ul>
-
-      <!-- Languages -->
-      <h3 class="section-title">Languages</h3>
-      <ul>
-<li>English</li>
-<li>Tamil</li>
-</ul>
-
-      <!-- Qualities -->
-      <h3 class="section-title">Qualities</h3>
-      <ul>
-<li>Analytical Thinking</li>
-<li>Problem Solving</li>
-<li>Attention to Detail</li>
-<li>Communication Skills</li>
-<li>Time Management</li>
-<li>Quick Learner</li>
-<li>Team Collaboration</li>
-</ul>
-    </div>
-  </div>
-</div>
 <script src="main.js"></script>
 </body>
 </html>
