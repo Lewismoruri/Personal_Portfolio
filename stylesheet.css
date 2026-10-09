@@ -1079,14 +1079,21 @@ border-radius: 0.5rem;
 }
 
 .blog-section {
-  padding: 60px 10% 30px;
+  padding: 60px 0 30px;
+}
+
+.blog-section > .container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1100px) {
@@ -1195,6 +1202,76 @@ border-radius: 0.5rem;
 
 .blog-link:hover {
   text-decoration: underline;
+}
+
+.newsletter-section {
+  max-width: 1050px;
+  margin: 24px auto 60px;
+  padding: 40px 48px;
+  background: #0d1117;
+  border: 1px solid rgba(0, 255, 85, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 255, 85, 0.1);
+}
+
+.newsletter-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-eyebrow {
+  margin-bottom: 10px;
+  color: rgb(0, 255, 85);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.newsletter-section h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.newsletter-tagline {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.newsletter-description {
+  max-width: 620px;
+  margin: 0 auto 24px;
+  color: #c9d1d9;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.newsletter-link {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border: 1px solid rgba(0, 255, 85, 0.65);
+  border-radius: 8px;
+  background: rgba(0, 255, 85, 0.1);
+  color: rgb(0, 255, 85);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-link:hover {
+  background: rgb(0, 255, 85);
+  color: #000013;
+  box-shadow: 0 0 16px rgba(0, 255, 85, 0.3);
 }
 
 .tech-tags {
@@ -1323,13 +1400,13 @@ border-radius: 0.5rem;
 
 @media (max-width: 992px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row on tablets */
   }
 }
 
 @media (max-width: 600px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* 1 per row on mobile */
+    grid-template-columns: minmax(0, 1fr); /* 1 per row on mobile */
   }
 }
 .contac {
@@ -1437,8 +1514,8 @@ html {
   }
 
   .about-profile-frame img{
-    width:280px;
-    height:280px;
+    width:min(100%, 220px);
+    height:auto;
   }
 
   .about-text{
@@ -1472,6 +1549,30 @@ html {
 
   .contact{
     grid-template-columns:1fr;
+  }
+
+  #services > .container {
+    padding: 60px 5%;
+  }
+
+  .projects-grid,
+  .blog-grid {
+    gap: 20px;
+  }
+
+  .blog-card {
+    aspect-ratio: auto;
+    min-height: 200px;
+    overflow: visible;
+  }
+
+  .blog-card h3,
+  .blog-card p {
+    display: block;
+    overflow: visible;
+    line-clamp: unset;
+    -webkit-line-clamp: unset;
+    overflow-wrap: anywhere;
   }
 
 }
@@ -1827,6 +1928,29 @@ BLOG ARTICLE - MOBILE
 }
 
 @media (max-width: 600px) {
+  .newsletter-section {
+    width: calc(100% - 32px);
+    margin: 16px auto 44px;
+    padding: 28px 20px;
+  }
+
+  .newsletter-section h2 {
+    font-size: 29px;
+  }
+
+  .newsletter-tagline {
+    font-size: 17px;
+  }
+
+  .newsletter-description {
+    font-size: 15px;
+  }
+
+  .newsletter-link {
+    max-width: 100%;
+    padding: 11px 16px;
+  }
+
   .contact-section {
     padding: 70px 15px 50px;
   }
