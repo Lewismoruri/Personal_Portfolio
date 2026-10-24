@@ -1191,6 +1191,30 @@ border-radius: 0.5rem;
   margin-bottom: 10px;
 }
 
+.blog-card--ecommerce {
+  aspect-ratio: auto;
+  min-height: 270px;
+}
+
+.blog-card--ecommerce h3,
+.blog-card--ecommerce p {
+  display: block;
+  overflow: visible;
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+}
+
+.blog-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: auto;
+}
+
+.blog-card--ecommerce .blog-link {
+  margin-top: 0;
+}
+
 .blog-link {
   display: inline-block;
   flex-shrink: 0;
